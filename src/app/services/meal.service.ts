@@ -7,7 +7,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MealService {
 
-  private apiUrl=(`https://www.themealdb.com/api/json/v1/1/search.php?f=a`);
+  private apiUrl=(`https://www.themealdb.com/api/json/v1/1/search.php?f=g`);
+  
+
+
+
 
   constructor(private http: HttpClient) { }
 

@@ -1,14 +1,19 @@
-<div class="meal-title">
-    <h1>PRODUCTS:</h1>
-  </div>
-  
-  <ul>
+   <div class="title">
+      <h1>Top Monthly Meals</h1>
+   </div>
+   <ul>
+   <div class="meal-list">
+    
     <li *ngFor="let meal of meals" class="meal-container">
       <div class="meal-card">
+        <div class="image-container">
+          <img src="{{meal.image}}" alt="">
+        </div>
         <div class="meal-info">
-          <h3>{{ meal.strMeal }}</h3>
+          <h3>{{ meal.name }}</h3>
         </div>
       </div>
     </li>
-  </ul>
-  
+   
+  </div>
+</ul>
