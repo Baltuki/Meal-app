@@ -8,7 +8,7 @@ import { mealResults } from '../../interfaces/meal';
 @Component({
   selector: 'app-popular-foods',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './popular-foods.component.html',
   styleUrl: './popular-foods.component.css'
 })
