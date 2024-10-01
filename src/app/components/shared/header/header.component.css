@@ -5,4 +5,6 @@ header{
     align-items: center;
     background-color: #23180d;
     height: 70px;    
+    margin: 0;
+    padding: 0;
 }

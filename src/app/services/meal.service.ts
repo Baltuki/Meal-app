@@ -18,5 +18,6 @@ export class MealService {
   getMealList(): Observable<any>{
     return this.http.get<any[]>(this.apiUrl);
   }
+  
 
 }

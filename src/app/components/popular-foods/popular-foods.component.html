@@ -1,10 +1,15 @@
 <div class="title">
     <h1>Popular foods</h1>
  </div>
+ 
+ 
  <ul>
- <div class="meal-list">
+    <div class="carousel-container">
+
   
-  <li *ngFor="let meal of meals" class="meal-container">
+    <ngx-slick-carousel class="meal-container carousel" #slickModal="slick-carousel" [config]="slideConfig">
+
+      <li ngxSlickItem *ngFor="let meal of meals" class="meal-container">
     <div class="meal-card">
       <div class="image-container">
         <img src="{{meal.image}}" alt="">
@@ -14,6 +19,7 @@
       </div>
     </div>
   </li>
- 
-</div>
+    
+    </ngx-slick-carousel>
+  </div>
 </ul>
