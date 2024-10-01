@@ -19,7 +19,7 @@ export class MealListComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.mealService.getMealListA().subscribe(
+    this.mealService.getMealList().subscribe(
       (data: any) => {
         this.meals = data.meals.map((meal: any) => ({
           id: meal.idMeal,
