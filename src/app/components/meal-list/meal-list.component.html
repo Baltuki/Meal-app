@@ -1,0 +1,14 @@
+<div class="meal-title">
+    <h1>PRODUCTS:</h1>
+  </div>
+  
+  <ul>
+    <li *ngFor="let meal of meals" class="meal-container">
+      <div class="meal-card">
+        <div class="meal-info">
+          <h3>{{ meal.strMeal }}</h3>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
