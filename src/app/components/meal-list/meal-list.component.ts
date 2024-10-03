@@ -5,6 +5,7 @@ import { MealService } from '../../services/meal.service';
 import { NgIf, NgFor } from '@angular/common';
 import { mealResults } from '../../interfaces/meal';
 
+
 @Component({
   selector: 'app-meal-list',
   standalone: true,
@@ -19,7 +20,7 @@ export class MealListComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.mealService.getMealListA().subscribe(
+    this.mealService.getMealList().subscribe(
       (data: any) => {
         this.meals = data.meals.map((meal: any) => ({
           id: meal.idMeal,
