@@ -12,7 +12,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-popular-foods',
   standalone: true,
-  imports: [],
+  imports: [SlickCarouselModule,NgFor],
   templateUrl: './popular-foods.component.html',
   styleUrl: './popular-foods.component.css'
 })
